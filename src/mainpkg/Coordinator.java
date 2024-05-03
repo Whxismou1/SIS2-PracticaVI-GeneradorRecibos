@@ -51,6 +51,24 @@ public class Coordinator {
             }
 
         }
+        
+        
+        for (int i = 0; i < listaContribuyente.size(); i++) {
+            Contribuyente actualContri = listaContribuyente.get(i);
+            actualContri.getExencion();
+            actualContri.getId();
+            actualContri.getNombre();
+            actualContri.getApellido1();
+            actualContri.getApellido2();
+            actualContri.getNIFNIE();
+            actualContri.getIBAN();
+            actualContri.getLecturaActual();
+            actualContri.getLecturaAnterior();
+            
+        }
+        
+        
+        
 
         for (int i = 0; i < listaContribuyente.size(); i++) {
             Contribuyente contribuyenteActual = listaContribuyente.get(i);
