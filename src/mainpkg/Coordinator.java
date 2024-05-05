@@ -2,9 +2,11 @@ package mainpkg;
 
 import Controllers.CCCController;
 import Controllers.ExcelManager;
+import Controllers.GeneradorRecibosXML;
 import Controllers.IBANController;
 import Controllers.NIFController;
 import Entities.Contribuyente;
+import Entities.Recibo;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -50,6 +52,12 @@ public class Coordinator {
             }
 
         }
+        
+        
+        
+        
+        
+        List<Recibo> listaRecibosUsuarios = new ArrayList<>();
         for (int i = 0; i < listaContribuyente.size(); i++) {
             Contribuyente actualContri = listaContribuyente.get(i);
             actualContri.getExencion();
@@ -64,8 +72,13 @@ public class Coordinator {
             actualContri.getFechaAlta();
             
             actualContri.getFechaBaja();
+            
+            
+            Recibo reciboActual = new Recibo();
+            listaRecibosUsuarios.add(reciboActual);
         }
-
+        new GeneradorRecibosXML().generateRecibeXML(listaContribuyente);
+//        new GeneradorRecibosXML().generateRecibeXML(listaRecibosUsuarios);
     }
 
     private boolean isEmptyContribuyente(Contribuyente actual) {
