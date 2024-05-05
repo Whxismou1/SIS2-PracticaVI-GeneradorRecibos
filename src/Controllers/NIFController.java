@@ -45,7 +45,6 @@ public class NIFController {
     }
 
     private boolean isValidStructureNIEExtranjero(String nif) {
-        System.out.println("En isValidStructureNIEExtranjero: " + nif);
              
         if (!Character.isLetter(nif.charAt(nif.length() - 1)) || !Character.isLetter(nif.charAt(0))) {
             return false;
@@ -135,7 +134,6 @@ public class NIFController {
     }
 
     public boolean isSpanish(String nif) {
-        System.out.println("EN isSpanish vale: " + nif);
         boolean valifNIExtranjero = isValidStructureNIEExtranjero(nif);
 
         if (valifNIExtranjero) {

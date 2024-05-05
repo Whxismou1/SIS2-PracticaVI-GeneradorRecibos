@@ -3,6 +3,8 @@ package Controllers;
 
 import Entities.Contribuyente;
 import java.io.*;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -115,7 +117,13 @@ public class ExcelManager {
                 String value = celda.getStringCellValue();
                 return value.isEmpty() ? null : value;
             case NUMERIC:
-                return String.valueOf(celda.getNumericCellValue());
+                if (DateUtil.isCellDateFormatted(celda)) {
+                    DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+                    return dateFormat.format(celda.getDateCellValue());
+                } else {
+                    return String.valueOf(celda.getNumericCellValue());
+                }
+                
             case BLANK:
                 return null;
             default:

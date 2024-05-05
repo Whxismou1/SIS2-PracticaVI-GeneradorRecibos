@@ -5,6 +5,8 @@ import Controllers.ExcelManager;
 import Controllers.IBANController;
 import Controllers.NIFController;
 import Entities.Contribuyente;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,19 +31,16 @@ public class Coordinator {
 
         for (int i = 0; i < listaContribuyente.size(); i++) {
             Contribuyente contribuyenteActual = listaContribuyente.get(i);
-
             System.out.println(contribuyenteActual.toString());
             if (isEmptyContribuyente(contribuyenteActual)) {
                 continue;
             }
 
             String nifActual = contribuyenteActual.getNIFNIE();
-            boolean isSpanish = nifControler.isSpanish(nifActual);
-            System.out.println(nifActual);
-
             if (nifActual == null) {
                 continue;
             } else {
+                boolean isSpanish = nifControler.isSpanish(nifActual);
                 if (nifControler.isNifValid(nifActual, isSpanish, contribuyenteActual)) {
                     String actualCCC = contribuyenteActual.getCCC();
                     cccController.checkCCC(actualCCC, contribuyenteActual);
@@ -51,8 +50,6 @@ public class Coordinator {
             }
 
         }
-        
-        
         for (int i = 0; i < listaContribuyente.size(); i++) {
             Contribuyente actualContri = listaContribuyente.get(i);
             actualContri.getExencion();
@@ -64,16 +61,11 @@ public class Coordinator {
             actualContri.getIBAN();
             actualContri.getLecturaActual();
             actualContri.getLecturaAnterior();
+            actualContri.getFechaAlta();
             
+            actualContri.getFechaBaja();
         }
-        
-        
-        
 
-        for (int i = 0; i < listaContribuyente.size(); i++) {
-            Contribuyente contribuyenteActual = listaContribuyente.get(i);
-            System.out.println(contribuyenteActual.toString());
-        }
     }
 
     private boolean isEmptyContribuyente(Contribuyente actual) {
