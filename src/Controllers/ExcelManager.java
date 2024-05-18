@@ -1,7 +1,7 @@
 
 package Controllers;
 
-import Entities.Contribuyente;
+import Entities.*;
 import java.io.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -48,16 +48,16 @@ public class ExcelManager {
         }
     }
     
-    public List<Contribuyente> readEcel() {
+    public List<Contribuyente> readExcelContribuyente() {
         FileInputStream f = null;
         XSSFWorkbook libro = null;
         List<Contribuyente> entradasExcel = new ArrayList<>();
         try {
             f = new FileInputStream("src/resources/SistemasAgua.xlsx");
             libro = new XSSFWorkbook(f);
-            XSSFSheet hoja = libro.getSheetAt(0);
+            XSSFSheet hojaContribuyente = libro.getSheetAt(0);
 
-            Row encabezado = hoja.getRow(0);
+            Row encabezado = hojaContribuyente.getRow(0);
 
             if (encabezado != null) {
                 List<String> nombresColumnas = new ArrayList<>();
@@ -67,7 +67,7 @@ public class ExcelManager {
                     nombresColumnas.add(celda.getStringCellValue());
                 }
 
-                Iterator<Row> filas = hoja.iterator();
+                Iterator<Row> filas = hojaContribuyente.iterator();
                 filas.next(); // Saltar la primera fila (encabezado)
                 Long actualId = 2L;
                 while (filas.hasNext()) {
@@ -85,6 +85,64 @@ public class ExcelManager {
 
                     // Agregar el contribuyente a la lista
                     entradasExcel.add(contribuyente);
+                    actualId++;
+
+                }
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (libro != null) {
+                    libro.close();
+                }
+                if (f != null) {
+                    f.close();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return entradasExcel;
+    }
+    
+    public List<Ordenanza> readExcelOrdenanza() {
+        FileInputStream f = null;
+        XSSFWorkbook libro = null;
+        List<Ordenanza> entradasExcel = new ArrayList<>();
+        try {
+            f = new FileInputStream("src/resources/SistemasAgua.xlsx");
+            libro = new XSSFWorkbook(f);
+            XSSFSheet hojaOrdenanza = libro.getSheetAt(1);
+
+            Row encabezado = hojaOrdenanza.getRow(0);
+
+            if (encabezado != null) {
+                List<String> nombresColumnas = new ArrayList<>();
+                Iterator<Cell> celdasEncabezado = encabezado.cellIterator();
+                while (celdasEncabezado.hasNext()) {
+                    Cell celda = celdasEncabezado.next();
+                    nombresColumnas.add(celda.getStringCellValue());
+                }
+
+                Iterator<Row> filas = hojaOrdenanza.iterator();
+                filas.next(); // Saltar la primera fila (encabezado)
+                Long actualId = 2L;
+                while (filas.hasNext()) {
+                    Row fila = filas.next();
+                    Iterator<Cell> celdas = fila.cellIterator();
+                    Ordenanza ordenanza = new Ordenanza();
+                    // Recorremos las celdas de la fila
+                    while (celdas.hasNext()) {
+                        Cell celda = celdas.next();
+                        int indiceCelda = celda.getColumnIndex();
+                        String nombreColumna = nombresColumnas.get(indiceCelda);
+                        asignarValorOrdenanza(ordenanza, nombreColumna, celda);
+                    }
+
+                    // Agregar el contribuyente a la lista
+                    entradasExcel.add(ordenanza);
                     actualId++;
 
                 }
@@ -130,6 +188,50 @@ public class ExcelManager {
                 return null;
         }
 
+    }
+    
+    private void asignarValorOrdenanza(Ordenanza ordenanza, String nombreColumna, Cell celda) {
+        switch (nombreColumna) {
+            case "Pueblo":
+                ordenanza.setPueblo(getCellValue(celda));
+                break;
+            case "TipoCalculo":
+                ordenanza.setTipoCalculo(getCellValue(celda));
+                break;
+            case "idOrdenanza":
+                ordenanza.setId(getCellValue(celda));
+                break;
+            case "Concepto":
+                ordenanza.setConcepto(getCellValue(celda));
+                break;
+            case "Subconcepto":
+                ordenanza.setSubconcepto(getCellValue(celda));
+                break;
+            case "Descripcion":
+                ordenanza.setDescripcion(getCellValue(celda));
+                break;
+            case "Acumulable":
+                ordenanza.setAcumulable(getCellValue(celda));
+                break;
+            case "Precio fijo":
+                ordenanza.setPrecioFijo(getCellValue(celda));
+                break;
+            case "m3 incluidos":
+                ordenanza.setM3incluidos(getCellValue(celda));
+                break;
+            case "Precio m3":
+                ordenanza.setPreciom3(getCellValue(celda));
+                break;
+            case "PorcentajeSobreOtroConcepto":
+                ordenanza.setPorcentajeSobreOtroConcepto(getCellValue(celda));
+                break;
+            case "SobreQueConcepto":
+                ordenanza.setSobreQueConcepto(getCellValue(celda));
+                break;
+            case "IVA":
+                ordenanza.setIVA(getCellValue(celda));
+                break;
+        }
     }
 
     private void asignarValorContribuyente(Contribuyente contribuyente, String nombreColumna, Cell celda) {
@@ -208,7 +310,7 @@ public class ExcelManager {
         row.createCell(16).setCellValue(contribuyente.getConceptosACobrar());
     }
 
-    private boolean isEmptyContribuyente(Contribuyente contribuyente) {
+    public boolean isEmptyContribuyente(Contribuyente contribuyente) {
         return (contribuyente == null || (
                 contribuyente.getNIFNIE() == null &&
                 contribuyente.getCCC() == null &&
@@ -222,5 +324,4 @@ public class ExcelManager {
                 contribuyente.getFechaBaja() == null &&
                 contribuyente.getConceptosACobrar() == null));
     }
-
 }

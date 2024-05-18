@@ -3,10 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/moasin/UNI/2º/SegundoCuatro/SIS2/p6/PVIRecibosAgua/src/Controllers/GeneradorRecibosXML.java</file>
-            <file>file:/home/moasin/UNI/2º/SegundoCuatro/SIS2/p6/PVIRecibosAgua/src/Controllers/ExcelManager.java</file>
-            <file>file:/home/moasin/UNI/2º/SegundoCuatro/SIS2/p6/PVIRecibosAgua/src/mainpkg/Coordinator.java</file>
-            <file>file:/home/moasin/UNI/2º/SegundoCuatro/SIS2/p6/PVIRecibosAgua/src/Entities/Recibo.java</file>
+            <file>file:/C:/Users/maxim/Documents/SIS2-PracticaVI-GeneradorRecibos/src/Entities/Recibo.java</file>
+            <file>file:/C:/Users/maxim/Documents/SIS2-PracticaVI-GeneradorRecibos/src/Controllers/GeneradorRecibosXML.java</file>
+            <file>file:/C:/Users/maxim/Documents/SIS2-PracticaVI-GeneradorRecibos/src/Entities/Contribuyente.java</file>
+            <file>file:/C:/Users/maxim/Documents/SIS2-PracticaVI-GeneradorRecibos/src/mainpkg/Coordinator.java</file>
+            <file>file:/C:/Users/maxim/Documents/SIS2-PracticaVI-GeneradorRecibos/src/Controllers/ExcelManager.java</file>
+            <file>file:/C:/Users/maxim/Documents/SIS2-PracticaVI-GeneradorRecibos/src/mainpkg/Main.java</file>
+            <file>file:/C:/Users/maxim/Documents/SIS2-PracticaVI-GeneradorRecibos/src/Entities/Ordenanza.java</file>
         </group>
     </open-files>
 </project-private>

@@ -5,16 +5,17 @@ import Controllers.ExcelManager;
 import Controllers.GeneradorRecibosXML;
 import Controllers.IBANController;
 import Controllers.NIFController;
-import Entities.Contribuyente;
-import Entities.Recibo;
+import Entities.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Coordinator {
 
-    public void init(String userInput) {
+    public void init() {
         ExcelManager excMang = new ExcelManager();
         CCCController cccController = new CCCController();
         IBANController ibanCont = new IBANController();
@@ -23,17 +24,15 @@ public class Coordinator {
         List<Contribuyente> malCCC = new ArrayList<>();
         List<Contribuyente> nifNiesApariciones = new ArrayList<>();
 
-        StringBuilder sb = new StringBuilder(userInput);
+        
 
-        int numTrimestre = Integer.parseInt(sb.substring(0, 1));;
-
-        int año = Integer.parseInt(sb.substring(3, sb.length()));
-
-        List<Contribuyente> listaContribuyente = excMang.readEcel();
+        List<Contribuyente> listaContribuyente = excMang.readExcelContribuyente();
+        List<Contribuyente> listaContribuyenteFiltrado = new ArrayList<>();
+        List<Ordenanza> listaOrdenanza = excMang.readExcelOrdenanza();
 
         for (int i = 0; i < listaContribuyente.size(); i++) {
             Contribuyente contribuyenteActual = listaContribuyente.get(i);
-            System.out.println(contribuyenteActual.toString());
+            //System.out.println(contribuyenteActual.toString());
             if (isEmptyContribuyente(contribuyenteActual)) {
                 continue;
             }
@@ -48,14 +47,12 @@ public class Coordinator {
                     cccController.checkCCC(actualCCC, contribuyenteActual);
 
                     ibanCont.checkIban(contribuyenteActual);
+                    if (!nifControler.getIsSaneado()) {
+                        listaContribuyenteFiltrado.add(contribuyenteActual);
+                    }
                 }
             }
-
         }
-        
-        
-        
-        
         
         List<Recibo> listaRecibosUsuarios = new ArrayList<>();
         for (int i = 0; i < listaContribuyente.size(); i++) {
@@ -77,8 +74,28 @@ public class Coordinator {
             Recibo reciboActual = new Recibo();
             listaRecibosUsuarios.add(reciboActual);
         }
-        new GeneradorRecibosXML().generateRecibeXML(listaContribuyente);
 //        new GeneradorRecibosXML().generateRecibeXML(listaRecibosUsuarios);
+        for (int i = 0; i < listaOrdenanza.size(); i++) {
+
+            Ordenanza actualOrdenanza = listaOrdenanza.get(i);
+            actualOrdenanza.getPueblo();
+            actualOrdenanza.getTipoCalculo();
+            actualOrdenanza.getId();
+            actualOrdenanza.getConcepto();
+            actualOrdenanza.getSubconcepto();
+            actualOrdenanza.getDescripcion();
+            actualOrdenanza.getAcumulable();
+            actualOrdenanza.getPrecioFijo();
+            actualOrdenanza.getM3incluidos();
+            actualOrdenanza.getPreciom3();
+            actualOrdenanza.getPorcentajeSobreOtroConcepto();
+            actualOrdenanza.getSobreQueConcepto();
+            actualOrdenanza.getIVA();
+        }
+        Scanner sc = new Scanner(System.in);
+        
+        String trimestre = sc.nextLine();
+        new GeneradorRecibosXML().generateRecibeXML(listaContribuyenteFiltrado, listaOrdenanza, trimestre);
     }
 
     private boolean isEmptyContribuyente(Contribuyente actual) {
