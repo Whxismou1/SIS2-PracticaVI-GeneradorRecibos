@@ -16,6 +16,9 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.Arrays;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 import org.jdom2.Attribute;
 import org.jdom2.Document;
 import org.jdom2.Element;
@@ -30,128 +33,161 @@ import org.jdom2.output.XMLOutputter;
 public class GeneradorRecibosXML {
     private static String path = "src/resources/recibos.xml";
     public void generateRecibeXML(List<Contribuyente> listaContribuyentes, List<Ordenanza> listaOrdenanza, String userInput){
+        
          try {
             ExcelManager excMang = new ExcelManager();
             Element contribuyentes = new Element("Recibos");
             Document doc = new Document(contribuyentes);
-            
+
             int numTrimestre = Integer.parseInt(userInput.substring(0, 1));
             int año = Integer.parseInt(userInput.substring(2).trim());
+            System.out.println(numTrimestre + "-" + año);
 
             // Calcular la fecha de inicio y fin del trimestre
             LocalDate fechaInicioTrimestre = calcularInicioTrimestre(numTrimestre, año);
             LocalDate fechaFinTrimestre = calcularFinTrimestre(numTrimestre, año);
+         
 
             // Formateador para la fecha de alta del contribuyente
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-            
-            // Filtrar los contribuyentes por la fecha de alta
-            List<Contribuyente> contribuyentesFiltrados = filtrarContribuyentesPorFecha(listaContribuyentes, fechaFinTrimestre, formatter);
-            
- 
+//            // Filtrar los contribuyentes por la fecha de alta
+            List<Contribuyente> contribuyentesFiltrados = filtrarContribuyentesPorFecha(listaContribuyentes, fechaFinTrimestre,fechaInicioTrimestre, formatter);
+//
             float baseImponible = 0;
             float iva = 0;
             float recibos = 0;
 
-
             for (Contribuyente contr : contribuyentesFiltrados) {
                 LocalDate fechaAlta = LocalDate.parse(contr.getFechaAlta(), formatter);
-                    if (!excMang.isEmptyContribuyente(contr)) {
-                        Element contribuyente = new Element("Recibo");
-                        Attribute attr = new Attribute("id", contr.getId().toString());
-                        contribuyente.setAttribute(attr);
-                        Element exencion = new Element("Exencion");
+                if (!excMang.isEmptyContribuyente(contr)) {
+                    Element contribuyente = new Element("Recibo");
+                    Attribute attr = new Attribute("id", contr.getId().toString());
+                    contribuyente.setAttribute(attr);
+                    Element exencion = new Element("Exencion");
                     //    <idFilaExcel>2</idFilaExcel>
-                        Element idFilaExcel = new Element("idFilaExcel");
+                    Element idFilaExcel = new Element("idFilaExcel");
                     //    <nombre>Juan</nombre>
-                        Element nombre = new Element("nombre");
+                    Element nombre = new Element("nombre");
                     //    <primerApellido>Martinez</primerApellido>
-                        Element apellido1 = new Element("primerApellido");
+                    Element apellido1 = new Element("primerApellido");
                     //    <segundoApellido>Dominguez</segundoApellido>
-                        Element apellido2 = new Element("segundoApellido");
+                    Element apellido2 = new Element("segundoApellido");
                     //    <NIF>09632539R</NIF>
-                        Element nif = new Element("NIF");
+                    Element nif = new Element("NIF");
+                    Element direccion = new Element("direccion");
                     //    <IBAN>DK7331645124473461205164</IBAN>
-                        Element iban = new Element("IBAN");
+                    Element iban = new Element("IBAN");
                     //    <lecturaActual>106</lecturaActual>
-                        Element lecturaActual = new Element("lecturaActual");
+                    Element lecturaActual = new Element("lecturaActual");
                     //    <lecturaAnterior>21</lecturaAnterior>
-                        Element lecturaAnterior = new Element("lecturaAnterior");
+                    Element lecturaAnterior = new Element("lecturaAnterior");
                     //    <consumo>85</consumo>
-                        Element consumo = new Element("consumo");
-
+                    Element consumo = new Element("consumo");
+                    Element bonificacion = new Element("bonificacion");
+                    Element fechaAltaElem = new Element("fechaAlta");
+                    Element tipoCalculo = new Element("TipoCalculo");
+                    
+                    
                     //    <baseImponibleRecibo>34.5</baseImponibleRecibo>
-                        Element baseImponibleRecibo = new Element("baseImponibleRecibo");
+                    Element baseImponibleReciboContribuyente = new Element("baseImponibleRecibo");
                     //    <ivaRecibo>7.245</ivaRecibo>
-                        Element ivaRecibo = new Element("ivaRecibo");
+                    Element ivaReciboContribuyente = new Element("ivaRecibo");
                     //    <totalRecibo>41.745</totalRecibo>
-                        Element totalRecibo = new Element("totalRecibo");
+                    Element totalReciboContribuyente = new Element("totalRecibo");
 
+                    exencion.setText(contr.getExencion());
+                    idFilaExcel.setText(String.valueOf(contr.getId()));
+                    nombre.setText(contr.getNombre());
+                    apellido1.setText(contr.getApellido1());
+                    apellido2.setText(contr.getApellido2());
+                    nif.setText(contr.getNIFNIE());
+                    String direccionCompleta = contr.getDireccion() + " " + contr.getNumero();
+                    direccion.setText(direccionCompleta);
+                    iban.setText(contr.getIBAN());
+                    lecturaActual.setText(contr.getLecturaActual());
+                    lecturaAnterior.setText(contr.getLecturaAnterior());
+                    bonificacion.setText(contr.getBonificacion());
+                    fechaAltaElem.setText(contr.getFechaAlta());
 
-                        exencion.setText(contr.getExencion());
-                        idFilaExcel.setText(String.valueOf(contr.getId()));
-                        nombre.setText(contr.getNombre());
-                        apellido1.setText(contr.getApellido1());
-                        apellido2.setText(contr.getApellido2());
-                        nif.setText(contr.getNIFNIE());
-                        iban.setText(contr.getIBAN());
-                        lecturaActual.setText(contr.getLecturaActual());
-                        lecturaAnterior.setText(contr.getLecturaAnterior());
-
-                        float cons = 0;
-                        if (contr.getLecturaActual() != null && contr.getLecturaAnterior() != null) {
-                            cons = Float.parseFloat(contr.getLecturaActual()) - Float.parseFloat(contr.getLecturaAnterior());
-                            consumo.setText(String.valueOf(cons));
+                    float cons = 0;
+                    if (contr.getLecturaActual() != null && contr.getLecturaAnterior() != null) {
+                        cons = Float.parseFloat(contr.getLecturaActual()) - Float.parseFloat(contr.getLecturaAnterior());
+                        consumo.setText(String.valueOf(cons));
+                    }
+                    
+                    float baseEachOne = 0;
+                    float IVAEachOne = 0;
+                    float totalEachOne = 0;
+                    
+                    float[] resultsXml = {0,0,0};
+                    
+                    
+                    if (contr.getConceptosACobrar() != null) {
+                        String[] conceptos = contr.getConceptosACobrar().split(" ");
+                        
+                        Set<String> tipoCalculoList = getTipoCalculo(conceptos, listaOrdenanza);
+                        tipoCalculo.setText(tipoCalculoList.toString());
+                        
+                        Arrays.sort(conceptos);
+                        for (int j = 0; j < conceptos.length; j++) {
+                            float[] resultado = conceptos(conceptos[j], cons, baseEachOne, IVAEachOne, listaOrdenanza);
+                            baseEachOne = resultado[0];
+                            //System.out.println("Concepto actual numero: " + conceptos[j]);
+                            //System.out.println("Base del " + contr.getId() + "es: " + base);
+                            IVAEachOne = resultado[1];
+                            //System.out.println("IVA del " + contr.getId() + "es: " + IVA);
+                            totalEachOne = baseEachOne + IVAEachOne;
+                            //System.out.println("Total del " + contr.getId() + "es: " + total);
                         }
-                        float base = 0;
-                        float IVA = 0;
-                        float total = 0;
-                        if (contr.getConceptosACobrar() != null) {
-                            String[] conceptos = contr.getConceptosACobrar().split(" ");
-                            Arrays.sort(conceptos);
-                            for (int j = 0; j < conceptos.length; j++) {
-                                float[] resultado = conceptos(conceptos[j], cons, base, IVA, listaOrdenanza);
-                                base = resultado[0];
-                                //System.out.println("Concepto actual numero: " + conceptos[j]);
-                                //System.out.println("Base del " + contr.getId() + "es: " + base);
-                                IVA = resultado[1];
-                                //System.out.println("IVA del " + contr.getId() + "es: " + IVA);
-                                total = base + IVA;
-                                //System.out.println("Total del " + contr.getId() + "es: " + total);
-                            }
-                        } 
-                        baseImponible += base;
-                        iva += IVA;
-                        recibos += total;
-
-                        baseImponibleRecibo.setText(String.valueOf(base));
-                        ivaRecibo.setText(String.valueOf(IVA));
-                        totalRecibo.setText(String.valueOf(total));
+                    }
+               
+                    if(!contr.getExencion().toUpperCase().equals("S")){
+                        baseImponible += baseEachOne;
+                        iva += IVAEachOne;
+                        recibos += totalEachOne;
+                    }else{
+                        baseEachOne = 0;
+                        IVAEachOne = 0;
+                        totalEachOne = 0;
+                    }
 
 
-                        contribuyente.addContent(exencion);
-                        contribuyente.addContent(idFilaExcel);
-                        contribuyente.addContent(nombre);
-                        contribuyente.addContent(apellido1);
-                        contribuyente.addContent(apellido2);
-                        contribuyente.addContent(iban);
-                        contribuyente.addContent(lecturaActual);
-                        contribuyente.addContent(lecturaAnterior);
-                        contribuyente.addContent(consumo);
-                        contribuyente.addContent(baseImponibleRecibo);
-                        contribuyente.addContent(ivaRecibo);
-                        contribuyente.addContent(totalRecibo);                
+                    baseImponibleReciboContribuyente.setText(String.valueOf(baseEachOne));
+                    ivaReciboContribuyente.setText(String.valueOf(IVAEachOne));
+                    totalReciboContribuyente.setText(String.valueOf(totalEachOne));
 
-                        contribuyentes.addContent(contribuyente);
-                    }  
-                
+                    contribuyente.addContent(idFilaExcel);
+                    contribuyente.addContent(nombre);
+                    contribuyente.addContent(apellido1);
+                    contribuyente.addContent(apellido2);
+                    contribuyente.addContent(nif);
+                    contribuyente.addContent(direccion);
+                    contribuyente.addContent(iban);
+                    contribuyente.addContent(fechaAltaElem);
+                    contribuyente.addContent(exencion);
+                    contribuyente.addContent(bonificacion);
+                    contribuyente.addContent(lecturaAnterior);
+                    contribuyente.addContent(lecturaActual);
+                    contribuyente.addContent(consumo);
+                    contribuyente.addContent(tipoCalculo);
+                    contribuyente.addContent(baseImponibleReciboContribuyente);
+                    contribuyente.addContent(ivaReciboContribuyente);
+                    contribuyente.addContent(totalReciboContribuyente);
+
+                    
+                    
+                    contribuyentes.addContent(contribuyente);
+                }
+
             }
-            
+          
+            Attribute fechaRecibo = new Attribute("fechaRecibo",  LocalDate.now().format(formatter));
             Attribute fechaPadron = new Attribute("fechaPadron", userInput);
             Attribute totalBaseImponible = new Attribute("totalBaseImponible", String.valueOf(baseImponible));
             Attribute totalIVA = new Attribute("totalIVA", String.valueOf(iva));
             Attribute totalRecibos = new Attribute("totalRecibos", String.valueOf(recibos));
-
+            
+            contribuyentes.setAttribute(fechaRecibo);
             contribuyentes.setAttribute(fechaPadron);
             contribuyentes.setAttribute(totalBaseImponible);
             contribuyentes.setAttribute(totalIVA);
@@ -196,17 +232,28 @@ public class GeneradorRecibosXML {
         }
     }
 
-    private List<Contribuyente> filtrarContribuyentesPorFecha(List<Contribuyente> contribuyentes, LocalDate fechaFinTrimestre, DateTimeFormatter formatter) {
+    private List<Contribuyente> filtrarContribuyentesPorFecha(List<Contribuyente> contribuyentes, LocalDate fechaFinTrimestre, LocalDate fechaInicioTrimestre, DateTimeFormatter formatter) {
         List<Contribuyente> contribuyentesFiltrados = new ArrayList<>();
         ExcelManager excMang = new ExcelManager();
         for (Contribuyente contribuyente : contribuyentes) {
             if(!excMang.isEmptyContribuyente(contribuyente)) {
                 String fechaAltaString = contribuyente.getFechaAlta();
+                String fechaBajaString = contribuyente.getFechaBaja();
                 try {
                     LocalDate fechaAlta = LocalDate.parse(fechaAltaString, formatter);
-                    if (!fechaAlta.isAfter(fechaFinTrimestre)) {
-                        contribuyentesFiltrados.add(contribuyente);
+                    LocalDate fechaBaja = null;
+                    
+                    if(fechaBajaString != null){
+                        fechaBaja = LocalDate.parse(fechaBajaString, formatter);
                     }
+                    
+                boolean estaActivoDuranteElTrimestre = fechaAlta.isBefore(fechaFinTrimestre) &&
+                                                       (fechaBaja == null || !fechaBaja.isBefore(fechaInicioTrimestre));
+                if (estaActivoDuranteElTrimestre) {        
+                    contribuyentesFiltrados.add(contribuyente);
+                        
+                }
+                    
                 } catch (DateTimeParseException e) {
                     System.err.println("Fecha de alta inválida para el contribuyente " + contribuyente.getId() + ": " + fechaAltaString);
                 }
@@ -217,11 +264,6 @@ public class GeneradorRecibosXML {
     
     public float[] conceptos(String concepto, float cons, float base, float IVA, List<Ordenanza> listaOrdenanza) {
         float[] resultado = new float[2];
-        /*
-        for (int i = 0; i < listaOrdenanza.size(); i++) {
-            System.out.println(listaOrdenanza.get(i).toString());
-        }
-        */
         switch (concepto) {
             case "1":
                 float consTemp1 = cons;
@@ -293,6 +335,21 @@ public class GeneradorRecibosXML {
                 resultado[1] = IVA;
                 return resultado;
         }
+    }
+
+    private Set<String> getTipoCalculo(String[] conceptos, List<Ordenanza> listaOrdenanza) {
+        Set<String> lista = new HashSet<>();        
+        for(int i = 0; i < conceptos.length; i++){
+            for (int j = 0; j < listaOrdenanza.size(); j++) {
+             
+                if(listaOrdenanza.get(j).getId().equals(String.valueOf(Float.parseFloat(conceptos[i])))){
+                    lista.add(listaOrdenanza.get(j).getTipoCalculo());
+                }
+            }
+            
+        }
+        
+        return lista;
     }
 
  

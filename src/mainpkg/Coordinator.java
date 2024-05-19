@@ -20,11 +20,6 @@ public class Coordinator {
         CCCController cccController = new CCCController();
         IBANController ibanCont = new IBANController();
         NIFController nifControler = new NIFController();
-        List<Contribuyente> malNie = new ArrayList<>();
-        List<Contribuyente> malCCC = new ArrayList<>();
-        List<Contribuyente> nifNiesApariciones = new ArrayList<>();
-
-        
 
         List<Contribuyente> listaContribuyente = excMang.readExcelContribuyente();
         List<Contribuyente> listaContribuyenteFiltrado = new ArrayList<>();
@@ -53,47 +48,8 @@ public class Coordinator {
                 }
             }
         }
-        
-        List<Recibo> listaRecibosUsuarios = new ArrayList<>();
-        for (int i = 0; i < listaContribuyente.size(); i++) {
-            Contribuyente actualContri = listaContribuyente.get(i);
-            actualContri.getExencion();
-            actualContri.getId();
-            actualContri.getNombre();
-            actualContri.getApellido1();
-            actualContri.getApellido2();
-            actualContri.getNIFNIE();
-            actualContri.getIBAN();
-            actualContri.getLecturaActual();
-            actualContri.getLecturaAnterior();
-            actualContri.getFechaAlta();
-            
-            actualContri.getFechaBaja();
-            
-            
-            Recibo reciboActual = new Recibo();
-            listaRecibosUsuarios.add(reciboActual);
-        }
-//        new GeneradorRecibosXML().generateRecibeXML(listaRecibosUsuarios);
-        for (int i = 0; i < listaOrdenanza.size(); i++) {
-
-            Ordenanza actualOrdenanza = listaOrdenanza.get(i);
-            actualOrdenanza.getPueblo();
-            actualOrdenanza.getTipoCalculo();
-            actualOrdenanza.getId();
-            actualOrdenanza.getConcepto();
-            actualOrdenanza.getSubconcepto();
-            actualOrdenanza.getDescripcion();
-            actualOrdenanza.getAcumulable();
-            actualOrdenanza.getPrecioFijo();
-            actualOrdenanza.getM3incluidos();
-            actualOrdenanza.getPreciom3();
-            actualOrdenanza.getPorcentajeSobreOtroConcepto();
-            actualOrdenanza.getSobreQueConcepto();
-            actualOrdenanza.getIVA();
-        }
         Scanner sc = new Scanner(System.in);
-        
+
         String trimestre = sc.nextLine();
         new GeneradorRecibosXML().generateRecibeXML(listaContribuyenteFiltrado, listaOrdenanza, trimestre);
     }
