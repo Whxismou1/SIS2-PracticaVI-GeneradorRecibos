@@ -14,8 +14,9 @@ public class CCCController {
     private static int[] arrayPos = {1, 2, 4, 8, 5, 10, 9, 7, 3, 6};
     private boolean isCorregido = false;
 
-    public void checkCCC(String ccc, Contribuyente actualContri) {
+    public void checkCCC(String ccc, List<Contribuyente> malCCC, Contribuyente actualContri) {
         if (!isValidLengthCCC(ccc)) {
+            malCCC.add(actualContri);
             return;
         }
 
@@ -77,6 +78,7 @@ public class CCCController {
             //check xml genereta
             isCorregido = true;
             actualContri.setCCC(newCCC.toString());
+            malCCC.add(actualContri);
         }else{
             isCorregido = false;
         }

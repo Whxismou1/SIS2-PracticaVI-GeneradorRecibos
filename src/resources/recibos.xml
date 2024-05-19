@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Recibos fechaRecibo="19/05/2024" fechaPadron="1t 2024" totalBaseImponible="5579.0894" totalIVA="919.73706" totalRecibos="6498.8286">
+<Recibos fechaRecibo="19/05/2024" fechaPadron="1T 2024" totalBaseImponible="5699.2197" totalIVA="934.71014" totalRecibos="6633.931">
   <Recibo id="2">
     <idFilaExcel>2</idFilaExcel>
     <nombre>Juan</nombre>
@@ -350,6 +350,31 @@
     <ivaRecibo>7.119</ivaRecibo>
     <totalRecibo>56.409</totalRecibo>
   </Recibo>
+  <Recibo id="18">
+    <idFilaExcel>18</idFilaExcel>
+    <nombre>Antonio</nombre>
+    <primerApellido>García</primerApellido>
+    <segundoApellido>Rodríguez</segundoApellido>
+    <NIF>09548416N</NIF>
+    <direccion>REAL 0017</direccion>
+    <IBAN>AT6825030000114574745458</IBAN>
+    <fechaAlta>09/10/2017</fechaAlta>
+    <Exencion>N</Exencion>
+    <bonificacion>0.0</bonificacion>
+    <lecturaAnterior>996.0</lecturaAnterior>
+    <lecturaActual>1118.0</lecturaActual>
+    <consumo>122.0</consumo>
+    <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 22.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 22.0, 12.0, 6.1]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.84, 3.1500003, 4.62, 0.0, 0.0]</ImporteIVA>
+    <baseImponibleRecibo>79.1</baseImponibleRecibo>
+    <ivaRecibo>12.809999</ivaRecibo>
+    <totalRecibo>91.909996</totalRecibo>
+  </Recibo>
   <Recibo id="19">
     <idFilaExcel>19</idFilaExcel>
     <nombre>Dorina</nombre>
@@ -374,6 +399,31 @@
     <baseImponibleRecibo>113.2</baseImponibleRecibo>
     <ivaRecibo>19.32</ivaRecibo>
     <totalRecibo>132.51999</totalRecibo>
+  </Recibo>
+  <Recibo id="20">
+    <idFilaExcel>20</idFilaExcel>
+    <nombre>Pilar</nombre>
+    <primerApellido>González</primerApellido>
+    <segundoApellido>Salas</segundoApellido>
+    <NIF>09548150E</NIF>
+    <direccion>LEON-SANTANDER 0027</direccion>
+    <IBAN>ES9020960043023096200000</IBAN>
+    <fechaAlta>01/05/2009</fechaAlta>
+    <Exencion>N</Exencion>
+    <bonificacion>0.0</bonificacion>
+    <lecturaAnterior>263.0</lecturaAnterior>
+    <lecturaActual>363.0</lecturaActual>
+    <consumo>100.0</consumo>
+    <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 12.0, 3.9]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.84, 3.1500003, 0.0, 0.0]</ImporteIVA>
+    <baseImponibleRecibo>54.9</baseImponibleRecibo>
+    <ivaRecibo>8.19</ivaRecibo>
+    <totalRecibo>63.09</totalRecibo>
   </Recibo>
   <Recibo id="21">
     <idFilaExcel>21</idFilaExcel>
@@ -700,30 +750,30 @@
     <ivaRecibo>4.2</ivaRecibo>
     <totalRecibo>38.2</totalRecibo>
   </Recibo>
-  <Recibo id="39">
-    <idFilaExcel>39</idFilaExcel>
-    <nombre>Sara</nombre>
-    <primerApellido>Flórez</primerApellido>
+  <Recibo id="38">
+    <idFilaExcel>38</idFilaExcel>
+    <nombre>Cristina</nombre>
+    <primerApellido>Alonso</primerApellido>
     <segundoApellido>Prieto</segundoApellido>
-    <NIF>01234567L</NIF>
-    <direccion>MONTE (EL) 0034</direccion>
-    <IBAN>ES4723164897642213030615</IBAN>
-    <fechaAlta>12/11/2023</fechaAlta>
+    <NIF>09548295Y</NIF>
+    <direccion>MILGAS (LAS) 0001</direccion>
+    <IBAN>ES7225187786311225455548</IBAN>
+    <fechaAlta>12/07/2021</fechaAlta>
     <Exencion>N</Exencion>
     <bonificacion>0.0</bonificacion>
-    <lecturaAnterior>37.0</lecturaAnterior>
-    <lecturaActual>153.0</lecturaActual>
-    <consumo>116.0</consumo>
+    <lecturaAnterior>809.0</lecturaAnterior>
+    <lecturaActual>929.0</lecturaActual>
+    <consumo>120.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
     <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
     <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
-    <m3incluidos>[30.0, 20.0, 50.0, 16.0, 0.0, 0.0]</m3incluidos>
-    <BaseImponible>[20.0, 4.0, 15.000001, 16.0, 12.0, 5.5]</BaseImponible>
+    <m3incluidos>[30.0, 20.0, 50.0, 20.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 20.0, 12.0, 5.9]</BaseImponible>
     <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
-    <ImporteIVA>[4.2, 0.84, 3.1500003, 3.36, 0.0, 0.0]</ImporteIVA>
-    <baseImponibleRecibo>72.5</baseImponibleRecibo>
-    <ivaRecibo>11.549999</ivaRecibo>
-    <totalRecibo>84.05</totalRecibo>
+    <ImporteIVA>[4.2, 0.84, 3.1500003, 4.2, 0.0, 0.0]</ImporteIVA>
+    <baseImponibleRecibo>76.9</baseImponibleRecibo>
+    <ivaRecibo>12.389999</ivaRecibo>
+    <totalRecibo>89.29</totalRecibo>
   </Recibo>
   <Recibo id="40">
     <idFilaExcel>40</idFilaExcel>
@@ -774,6 +824,31 @@
     <baseImponibleRecibo>47.97</baseImponibleRecibo>
     <ivaRecibo>6.867</ivaRecibo>
     <totalRecibo>54.837</totalRecibo>
+  </Recibo>
+  <Recibo id="42">
+    <idFilaExcel>42</idFilaExcel>
+    <nombre>Herminia</nombre>
+    <primerApellido>Almanzar</primerApellido>
+    <segundoApellido>Robles</segundoApellido>
+    <NIF>09785530L</NIF>
+    <direccion>PINOS (LOS) 0254</direccion>
+    <IBAN>FI5024587946032003165464</IBAN>
+    <fechaAlta>02/05/2023</fechaAlta>
+    <Exencion>N</Exencion>
+    <bonificacion>0.0</bonificacion>
+    <lecturaAnterior>651.0</lecturaAnterior>
+    <lecturaActual>769.0</lecturaActual>
+    <consumo>118.0</consumo>
+    <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 18.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 18.0, 12.0, 5.7]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.84, 3.1500003, 3.78, 0.0, 0.0]</ImporteIVA>
+    <baseImponibleRecibo>74.7</baseImponibleRecibo>
+    <ivaRecibo>11.969999</ivaRecibo>
+    <totalRecibo>86.67</totalRecibo>
   </Recibo>
   <Recibo id="43">
     <idFilaExcel>43</idFilaExcel>
@@ -1225,6 +1300,31 @@
     <ivaRecibo>4.2</ivaRecibo>
     <totalRecibo>38.2</totalRecibo>
   </Recibo>
+  <Recibo id="67">
+    <idFilaExcel>67</idFilaExcel>
+    <nombre>Saaida</nombre>
+    <primerApellido>Blanco</primerApellido>
+    <segundoApellido>García</segundoApellido>
+    <NIF>09548827D</NIF>
+    <direccion>CONFORCOS 0007</direccion>
+    <IBAN>ES1633620012937852100256</IBAN>
+    <fechaAlta>13/09/2011</fechaAlta>
+    <Exencion>N</Exencion>
+    <bonificacion>0.0</bonificacion>
+    <lecturaAnterior>698.0</lecturaAnterior>
+    <lecturaActual>898.0</lecturaActual>
+    <consumo>200.0</consumo>
+    <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 100.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 100.0, 12.0, 13.9]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.84, 3.1500003, 21.0, 0.0, 0.0]</ImporteIVA>
+    <baseImponibleRecibo>164.9</baseImponibleRecibo>
+    <ivaRecibo>29.189999</ivaRecibo>
+    <totalRecibo>194.09</totalRecibo>
+  </Recibo>
   <Recibo id="68">
     <idFilaExcel>68</idFilaExcel>
     <nombre>Antonio</nombre>
@@ -1424,31 +1524,6 @@
     <baseImponibleRecibo>34.0</baseImponibleRecibo>
     <ivaRecibo>4.2</ivaRecibo>
     <totalRecibo>38.2</totalRecibo>
-  </Recibo>
-  <Recibo id="76">
-    <idFilaExcel>76</idFilaExcel>
-    <nombre>María</nombre>
-    <primerApellido>Sutil</primerApellido>
-    <segundoApellido>Herreras</segundoApellido>
-    <NIF>24304263W</NIF>
-    <direccion>SIN SALIDA 0001</direccion>
-    <IBAN>LU0932628484504115151115</IBAN>
-    <fechaAlta>19/02/2024</fechaAlta>
-    <Exencion>N</Exencion>
-    <bonificacion>0.0</bonificacion>
-    <lecturaAnterior>424.0</lecturaAnterior>
-    <lecturaActual>598.0</lecturaActual>
-    <consumo>174.0</consumo>
-    <TipoCalculo>[Hogar]</TipoCalculo>
-    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
-    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
-    <m3incluidos>[30.0, 20.0, 50.0, 74.0, 0.0, 0.0]</m3incluidos>
-    <BaseImponible>[20.0, 4.0, 15.000001, 74.0, 12.0, 11.3]</BaseImponible>
-    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
-    <ImporteIVA>[4.2, 0.84, 3.1500003, 15.54, 0.0, 0.0]</ImporteIVA>
-    <baseImponibleRecibo>136.3</baseImponibleRecibo>
-    <ivaRecibo>23.73</ivaRecibo>
-    <totalRecibo>160.03</totalRecibo>
   </Recibo>
   <Recibo id="79">
     <idFilaExcel>79</idFilaExcel>
@@ -1675,31 +1750,6 @@
     <ivaRecibo>4.62</ivaRecibo>
     <totalRecibo>26.619999</totalRecibo>
   </Recibo>
-  <Recibo id="90">
-    <idFilaExcel>90</idFilaExcel>
-    <nombre>Marta</nombre>
-    <primerApellido>Herrero</primerApellido>
-    <segundoApellido />
-    <NIF>Y1337652D</NIF>
-    <direccion>RIO TORIO 0060</direccion>
-    <IBAN>SM4423221158252545471411</IBAN>
-    <fechaAlta>28/08/2010</fechaAlta>
-    <Exencion>N</Exencion>
-    <bonificacion>0.0</bonificacion>
-    <lecturaAnterior>679.0</lecturaAnterior>
-    <lecturaActual>797.0</lecturaActual>
-    <consumo>118.0</consumo>
-    <TipoCalculo>[Hogar]</TipoCalculo>
-    <Concepto>[Agua, Agua, Agua, Agua]</Concepto>
-    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo]</Subconcepto>
-    <m3incluidos>[30.0, 20.0, 50.0, 18.0]</m3incluidos>
-    <BaseImponible>[20.0, 4.0, 15.000001, 18.0]</BaseImponible>
-    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%]</PorcentajeIVA>
-    <ImporteIVA>[4.2, 0.84, 3.1500003, 3.78]</ImporteIVA>
-    <baseImponibleRecibo>57.0</baseImponibleRecibo>
-    <ivaRecibo>11.969999</ivaRecibo>
-    <totalRecibo>68.97</totalRecibo>
-  </Recibo>
   <Recibo id="91">
     <idFilaExcel>91</idFilaExcel>
     <nombre>Miguel</nombre>
@@ -1900,31 +1950,6 @@
     <ivaRecibo>0.0</ivaRecibo>
     <totalRecibo>12.0</totalRecibo>
   </Recibo>
-  <Recibo id="127">
-    <idFilaExcel>127</idFilaExcel>
-    <nombre>Ismael</nombre>
-    <primerApellido>Vara</primerApellido>
-    <segundoApellido>Cembranos</segundoApellido>
-    <NIF>X1673150S</NIF>
-    <direccion>ERAS (LAS) 0014</direccion>
-    <IBAN>DK9032541112811220000588</IBAN>
-    <fechaAlta>17/10/2008</fechaAlta>
-    <Exencion>N</Exencion>
-    <bonificacion>0.0</bonificacion>
-    <lecturaAnterior>710.0</lecturaAnterior>
-    <lecturaActual>805.0</lecturaActual>
-    <consumo>95.0</consumo>
-    <TipoCalculo>[Hogar]</TipoCalculo>
-    <Concepto>[Agua, Agua, Agua, Desagüe]</Concepto>
-    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Desagüe]</Subconcepto>
-    <m3incluidos>[30.0, 20.0, 45.0, 0.0]</m3incluidos>
-    <BaseImponible>[20.0, 4.0, 13.500001, 3.75]</BaseImponible>
-    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%]</PorcentajeIVA>
-    <ImporteIVA>[4.2, 0.84, 2.8350003, 0.0]</ImporteIVA>
-    <baseImponibleRecibo>41.25</baseImponibleRecibo>
-    <ivaRecibo>7.8749995</ivaRecibo>
-    <totalRecibo>49.125</totalRecibo>
-  </Recibo>
   <Recibo id="128">
     <idFilaExcel>128</idFilaExcel>
     <nombre>Diana</nombre>
@@ -1974,31 +1999,6 @@
     <baseImponibleRecibo>61.6</baseImponibleRecibo>
     <ivaRecibo>11.759999</ivaRecibo>
     <totalRecibo>73.36</totalRecibo>
-  </Recibo>
-  <Recibo id="130">
-    <idFilaExcel>130</idFilaExcel>
-    <nombre>Nelida</nombre>
-    <primerApellido>Blanco</primerApellido>
-    <segundoApellido>Chamorro</segundoApellido>
-    <NIF>Y0806930N</NIF>
-    <direccion>ERAS (LAS) 0003</direccion>
-    <IBAN>ES7426221011628048788896</IBAN>
-    <fechaAlta>27/01/2012</fechaAlta>
-    <Exencion>N</Exencion>
-    <bonificacion>0.0</bonificacion>
-    <lecturaAnterior>1.0</lecturaAnterior>
-    <lecturaActual>37.0</lecturaActual>
-    <consumo>36.0</consumo>
-    <TipoCalculo>[Hogar]</TipoCalculo>
-    <Concepto>[Agua, Agua, Agua, Desagüe]</Concepto>
-    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Desagüe]</Subconcepto>
-    <m3incluidos>[30.0, 6.0, 0.0, 0.0]</m3incluidos>
-    <BaseImponible>[20.0, 1.2, 0.0, 2.12]</BaseImponible>
-    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%]</PorcentajeIVA>
-    <ImporteIVA>[4.2, 0.252, 0.0, 0.0]</ImporteIVA>
-    <baseImponibleRecibo>23.32</baseImponibleRecibo>
-    <ivaRecibo>4.452</ivaRecibo>
-    <totalRecibo>27.772</totalRecibo>
   </Recibo>
   <Recibo id="131">
     <idFilaExcel>131</idFilaExcel>
