@@ -91,11 +91,11 @@ public class GeneradorRecibosXML {
                     //    <lecturaAnterior>21</lecturaAnterior>
                     Element subconcepto = new Element("Subconcepto");
                     //    <consumo>85</consumo>
-                    //Element m3incluidos = new Element("m3incluidos");
+                    Element m3incluidos = new Element("m3incluidos");
                     Element baseImponibleRecibo = new Element("BaseImponible");
                     Element porcentajeIVA = new Element("PorcentajeIVA");
                     Element importeIVA = new Element("ImporteIVA");
-                    
+                                        
                     //    <baseImponibleRecibo>34.5</baseImponibleRecibo>
                     Element baseImponibleReciboContribuyente = new Element("baseImponibleRecibo");
                     //    <ivaRecibo>7.245</ivaRecibo>
@@ -165,7 +165,7 @@ public class GeneradorRecibosXML {
                     
                     concepto.setText(listaInfoConceptos.get(0).toString());
                     subconcepto.setText(listaInfoConceptos.get(1).toString());
-                    //m3incluidos.setText(listaInfoConceptos.get(2).toString());
+                    m3incluidos.setText(listaInfoConceptos.get(2).toString());
                     baseImponibleRecibo.setText(listaInfoConceptos.get(3).toString());
                     porcentajeIVA.setText(listaInfoConceptos.get(4).toString());
                     importeIVA.setText(listaInfoConceptos.get(5).toString());
@@ -201,7 +201,7 @@ public class GeneradorRecibosXML {
                     contribuyente.addContent(tipoCalculo);
                     contribuyente.addContent(concepto);
                     contribuyente.addContent(subconcepto);
-                    //contribuyente.addContent(m3incluidos);
+                    contribuyente.addContent(m3incluidos);
                     contribuyente.addContent(baseImponibleRecibo);
                     contribuyente.addContent(porcentajeIVA);
                     contribuyente.addContent(importeIVA);
@@ -338,7 +338,7 @@ public class GeneradorRecibosXML {
                         datos.add(listaOrdenanza.get(1).getM3incluidos());
                         datos.add(String.valueOf(Float.parseFloat(listaOrdenanza.get(1).getPreciom3()) * Float.parseFloat(listaOrdenanza.get(1).getM3incluidos())));
                         datos.add(listaOrdenanza.get(1).getIVA() + "%");
-                        datos.add(String.valueOf(base * Float.parseFloat(listaOrdenanza.get(1).getIVA())/100));
+                        datos.add(String.valueOf(Float.parseFloat(listaOrdenanza.get(1).getPreciom3()) * Float.parseFloat(listaOrdenanza.get(1).getM3incluidos()) * Float.parseFloat(listaOrdenanza.get(1).getIVA())/100));
                         reciboInfo(listaInfoConceptos, datos);
                         datos.clear();
                         base += Float.parseFloat(listaOrdenanza.get(1).getPreciom3()) * Float.parseFloat(listaOrdenanza.get(1).getM3incluidos());
@@ -361,7 +361,7 @@ public class GeneradorRecibosXML {
                         datos.add(listaOrdenanza.get(2).getM3incluidos());
                         datos.add(String.valueOf(Float.parseFloat(listaOrdenanza.get(2).getPreciom3()) * Float.parseFloat(listaOrdenanza.get(2).getM3incluidos())));
                         datos.add(listaOrdenanza.get(2).getIVA() + "%");
-                        datos.add(String.valueOf(base * Float.parseFloat(listaOrdenanza.get(2).getIVA())/100));
+                        datos.add(String.valueOf(Float.parseFloat(listaOrdenanza.get(2).getPreciom3()) * Float.parseFloat(listaOrdenanza.get(2).getM3incluidos()) * Float.parseFloat(listaOrdenanza.get(2).getIVA())/100));
                         reciboInfo(listaInfoConceptos, datos);
                         datos.clear();
                         base += Float.parseFloat(listaOrdenanza.get(2).getPreciom3()) * Float.parseFloat(listaOrdenanza.get(2).getM3incluidos());
@@ -397,10 +397,10 @@ public class GeneradorRecibosXML {
                 return resultado;
             case "3":
                 int conceptoTemp = (int) Float.parseFloat(listaOrdenanza.get(5).getSobreQueConcepto()); 
-                float[] resultConcepto = conceptos(String.valueOf(conceptoTemp), cons, 0, 0, listaOrdenanza, listaInfoConceptos);
+                float[] resultConcepto = conceptosSinInfo(String.valueOf(conceptoTemp), cons, 0, 0, listaOrdenanza);
                 datos.add(listaOrdenanza.get(5).getConcepto());
                 datos.add(listaOrdenanza.get(5).getSubconcepto());
-                datos.add(listaOrdenanza.get(5).getM3incluidos());
+                datos.add(String.valueOf(0.0));
                 datos.add(String.valueOf(resultConcepto[0] * Float.parseFloat(listaOrdenanza.get(5).getPorcentajeSobreOtroConcepto()) / 100));
                 datos.add(listaOrdenanza.get(5).getIVA() + "%");
                 datos.add(String.valueOf(base * Float.parseFloat(listaOrdenanza.get(4).getIVA())/100));
@@ -471,6 +471,82 @@ public class GeneradorRecibosXML {
                     datos.add(String.valueOf(Float.parseFloat(listaOrdenanza.get(9).getPrecioFijo()) + Float.parseFloat(listaOrdenanza.get(9).getPreciom3()) * consTemp6 * Float.parseFloat(listaOrdenanza.get(9).getIVA())/100));
                     reciboInfo(listaInfoConceptos, datos);
                     datos.clear();
+                    base += Float.parseFloat(listaOrdenanza.get(9).getPreciom3()) * consTemp6;
+                    IVA += Float.parseFloat(listaOrdenanza.get(9).getIVA())/100 * base;
+                }
+                resultado[0] = base;
+                resultado[1] = IVA;
+                return resultado;
+            default:
+                resultado[0] = base;
+                resultado[1] = IVA;
+                return resultado;
+        }
+    }
+    
+    public float[] conceptosSinInfo(String concepto, float cons, float base, float IVA, List<Ordenanza> listaOrdenanza) {
+        float[] resultado = new float[2];
+        List<String> datos = new ArrayList<>();
+        switch (concepto) {
+            case "1":
+                float consTemp1 = cons;
+                base += Float.parseFloat(listaOrdenanza.get(0).getPrecioFijo());
+                consTemp1 -= Float.parseFloat(listaOrdenanza.get(0).getM3incluidos());
+                if (consTemp1 > 0) {
+                    if (consTemp1 <= Float.parseFloat(listaOrdenanza.get(1).getM3incluidos())) {
+                        base += Float.parseFloat(listaOrdenanza.get(1).getPreciom3()) * consTemp1;
+                        consTemp1 = 0;
+                    } else {
+                        base += Float.parseFloat(listaOrdenanza.get(1).getPreciom3()) * Float.parseFloat(listaOrdenanza.get(1).getM3incluidos());
+                        consTemp1 -= Float.parseFloat(listaOrdenanza.get(1).getM3incluidos());
+                    }
+                    if (consTemp1 <= Float.parseFloat(listaOrdenanza.get(2).getM3incluidos())) {
+                        base += Float.parseFloat(listaOrdenanza.get(2).getPreciom3()) * consTemp1;
+                        consTemp1 = 0;
+                    } else {
+                        base += Float.parseFloat(listaOrdenanza.get(2).getPreciom3()) * Float.parseFloat(listaOrdenanza.get(2).getM3incluidos());
+                        consTemp1 -= Float.parseFloat(listaOrdenanza.get(2).getM3incluidos());
+                    }
+                    if(consTemp1 > 0) {
+                        base += Float.parseFloat(listaOrdenanza.get(3).getPreciom3()) * consTemp1;
+                    }
+                }
+                IVA += Float.parseFloat(listaOrdenanza.get(0).getIVA())/100 * base;
+                resultado[0] = base;
+                resultado[1] = IVA;
+                return resultado;
+            case "2":
+                resultado[0] = base + Float.parseFloat(listaOrdenanza.get(4).getPrecioFijo());
+                resultado[1] = IVA;
+                return resultado;
+            case "3":
+                int conceptoTemp = (int) Float.parseFloat(listaOrdenanza.get(5).getSobreQueConcepto()); 
+                float[] resultConcepto = conceptosSinInfo(String.valueOf(conceptoTemp), cons, 0, 0, listaOrdenanza);
+                //System.out.println(Float.parseFloat(listaOrdenanza.get(5).getPorcentajeSobreOtroConcepto()) / 100);
+                resultado[0] = (float) (base + (resultConcepto[0] * Float.parseFloat(listaOrdenanza.get(5).getPorcentajeSobreOtroConcepto()) / 100));
+                resultado[1] = IVA;
+                return resultado;
+            case "4":
+                float consTemp4 = cons;
+                base += Float.parseFloat(listaOrdenanza.get(6).getPrecioFijo());
+                consTemp4 -= Float.parseFloat(listaOrdenanza.get(6).getM3incluidos());
+                if (consTemp4 > 0) {
+                    base += Float.parseFloat(listaOrdenanza.get(7).getPreciom3()) * consTemp4;
+                }
+                IVA += Float.parseFloat(listaOrdenanza.get(6).getIVA())/100 * base;
+                resultado[0] = base;
+                resultado[1] = IVA;
+                return resultado;
+            case "5":
+                resultado[0] = base + Float.parseFloat(listaOrdenanza.get(8).getPrecioFijo());
+                resultado[1] = IVA;
+                return resultado;
+            case "6":
+                float consTemp6 = cons;
+                base += Float.parseFloat(listaOrdenanza.get(9).getPrecioFijo());
+            if (consTemp6 <= Float.parseFloat(listaOrdenanza.get(9).getM3incluidos())) {
+                    IVA += Float.parseFloat(listaOrdenanza.get(9).getIVA())/100 * base;
+                } else {
                     base += Float.parseFloat(listaOrdenanza.get(9).getPreciom3()) * consTemp6;
                     IVA += Float.parseFloat(listaOrdenanza.get(9).getIVA())/100 * base;
                 }

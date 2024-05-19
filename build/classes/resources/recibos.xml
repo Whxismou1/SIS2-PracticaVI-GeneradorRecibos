@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Recibos fechaRecibo="19/05/2024" fechaPadron="1T 2024" totalBaseImponible="5858.3394" totalIVA="999.1171" totalRecibos="6857.4585">
+<Recibos fechaRecibo="19/05/2024" fechaPadron="1t 2024" totalBaseImponible="5579.0894" totalIVA="919.73706" totalRecibos="6498.8286">
   <Recibo id="2">
     <idFilaExcel>2</idFilaExcel>
     <nombre>Juan</nombre>
@@ -14,10 +14,16 @@
     <lecturaAnterior>21.0</lecturaAnterior>
     <lecturaActual>106.0</lecturaActual>
     <consumo>85.0</consumo>
-    <TipoCalculo>[Empresa, PYME]</TipoCalculo>
-    <baseImponibleRecibo>313.75</baseImponibleRecibo>
-    <ivaRecibo>86.625</ivaRecibo>
-    <totalRecibo>400.375</totalRecibo>
+    <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 35.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 10.5]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 2.205]</ImporteIVA>
+    <baseImponibleRecibo>34.5</baseImponibleRecibo>
+    <ivaRecibo>7.245</ivaRecibo>
+    <totalRecibo>41.745</totalRecibo>
   </Recibo>
   <Recibo id="3">
     <idFilaExcel>3</idFilaExcel>
@@ -34,6 +40,12 @@
     <lecturaActual>799.0</lecturaActual>
     <consumo>55.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 5.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 1.5, 12.0, 2.55]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 0.315, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>40.05</baseImponibleRecibo>
     <ivaRecibo>5.355</ivaRecibo>
     <totalRecibo>45.405</totalRecibo>
@@ -53,6 +65,12 @@
     <lecturaActual>727.0</lecturaActual>
     <consumo>75.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 25.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 7.5000005, 12.0, 3.15]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 1.5750002, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>46.65</baseImponibleRecibo>
     <ivaRecibo>6.615</ivaRecibo>
     <totalRecibo>53.265</totalRecibo>
@@ -72,6 +90,12 @@
     <lecturaActual>1063.0</lecturaActual>
     <consumo>121.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 21.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 21.0, 12.0, 6.0]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 4.41, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>78.0</baseImponibleRecibo>
     <ivaRecibo>12.599999</ivaRecibo>
     <totalRecibo>90.6</totalRecibo>
@@ -91,6 +115,12 @@
     <lecturaActual>996.0</lecturaActual>
     <consumo>7.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 12.0, 2.0]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>34.0</baseImponibleRecibo>
     <ivaRecibo>4.2</ivaRecibo>
     <totalRecibo>38.2</totalRecibo>
@@ -110,6 +140,12 @@
     <lecturaActual>471.0</lecturaActual>
     <consumo>116.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 16.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 16.0, 12.0, 5.5]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 3.36, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>72.5</baseImponibleRecibo>
     <ivaRecibo>11.549999</ivaRecibo>
     <totalRecibo>84.05</totalRecibo>
@@ -129,6 +165,12 @@
     <lecturaActual>637.0</lecturaActual>
     <consumo>51.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 1.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 0.3, 12.0, 2.43]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 0.063, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>38.73</baseImponibleRecibo>
     <ivaRecibo>5.1029997</ivaRecibo>
     <totalRecibo>43.833</totalRecibo>
@@ -148,6 +190,12 @@
     <lecturaActual>698.0</lecturaActual>
     <consumo>137.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 37.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 37.0, 12.0, 7.6]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 7.77, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>95.6</baseImponibleRecibo>
     <ivaRecibo>15.959999</ivaRecibo>
     <totalRecibo>111.56</totalRecibo>
@@ -167,6 +215,12 @@
     <lecturaActual>777.0</lecturaActual>
     <consumo>43.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 13.0, 0.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 2.6000001, 0.0, 12.0, 2.26]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.546, 0.0, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>36.859997</baseImponibleRecibo>
     <ivaRecibo>4.746</ivaRecibo>
     <totalRecibo>41.605995</totalRecibo>
@@ -186,6 +240,12 @@
     <lecturaActual>832.0</lecturaActual>
     <consumo>187.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 87.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 87.0, 12.0, 12.6]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 18.27, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>150.6</baseImponibleRecibo>
     <ivaRecibo>26.46</ivaRecibo>
     <totalRecibo>177.06</totalRecibo>
@@ -205,6 +265,12 @@
     <lecturaActual>448.0</lecturaActual>
     <consumo>0.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 12.0, 2.0]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>34.0</baseImponibleRecibo>
     <ivaRecibo>4.2</ivaRecibo>
     <totalRecibo>38.2</totalRecibo>
@@ -224,6 +290,12 @@
     <lecturaActual>943.0</lecturaActual>
     <consumo>179.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 79.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 79.0, 12.0, 11.8]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 16.59, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>141.8</baseImponibleRecibo>
     <ivaRecibo>24.779999</ivaRecibo>
     <totalRecibo>166.58</totalRecibo>
@@ -243,6 +315,12 @@
     <lecturaActual>468.0</lecturaActual>
     <consumo>140.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 40.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 40.0, 12.0, 7.9]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 8.4, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>98.9</baseImponibleRecibo>
     <ivaRecibo>16.59</ivaRecibo>
     <totalRecibo>115.490005</totalRecibo>
@@ -262,6 +340,12 @@
     <lecturaActual>741.0</lecturaActual>
     <consumo>83.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 33.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 9.900001, 12.0, 3.39]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 2.079, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>49.29</baseImponibleRecibo>
     <ivaRecibo>7.119</ivaRecibo>
     <totalRecibo>56.409</totalRecibo>
@@ -281,6 +365,12 @@
     <lecturaActual>1121.0</lecturaActual>
     <consumo>153.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 53.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 53.0, 12.0, 9.2]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 11.13, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>113.2</baseImponibleRecibo>
     <ivaRecibo>19.32</ivaRecibo>
     <totalRecibo>132.51999</totalRecibo>
@@ -300,6 +390,12 @@
     <lecturaActual>459.0</lecturaActual>
     <consumo>122.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 22.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 22.0, 12.0, 6.1]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 4.62, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>79.1</baseImponibleRecibo>
     <ivaRecibo>12.809999</ivaRecibo>
     <totalRecibo>91.909996</totalRecibo>
@@ -319,6 +415,12 @@
     <lecturaActual>99.0</lecturaActual>
     <consumo>74.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 24.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 7.2000003, 12.0, 3.12]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 1.5120001, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>46.32</baseImponibleRecibo>
     <ivaRecibo>6.552</ivaRecibo>
     <totalRecibo>52.872</totalRecibo>
@@ -338,6 +440,12 @@
     <lecturaActual>809.0</lecturaActual>
     <consumo>200.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 100.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 100.0, 12.0, 13.9]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 21.0, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>164.9</baseImponibleRecibo>
     <ivaRecibo>29.189999</ivaRecibo>
     <totalRecibo>194.09</totalRecibo>
@@ -357,6 +465,12 @@
     <lecturaActual>204.0</lecturaActual>
     <consumo>177.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 77.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 77.0, 12.0, 11.6]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 16.17, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>139.6</baseImponibleRecibo>
     <ivaRecibo>24.359999</ivaRecibo>
     <totalRecibo>163.96</totalRecibo>
@@ -376,6 +490,12 @@
     <lecturaActual>841.0</lecturaActual>
     <consumo>42.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 12.0, 0.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 2.4, 0.0, 12.0, 2.24]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.504, 0.0, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>36.640003</baseImponibleRecibo>
     <ivaRecibo>4.704</ivaRecibo>
     <totalRecibo>41.344</totalRecibo>
@@ -395,6 +515,12 @@
     <lecturaActual>434.0</lecturaActual>
     <consumo>88.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 38.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 11.400001, 12.0, 3.54]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 2.394, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>50.940002</baseImponibleRecibo>
     <ivaRecibo>7.434</ivaRecibo>
     <totalRecibo>58.374</totalRecibo>
@@ -414,6 +540,12 @@
     <lecturaActual>511.0</lecturaActual>
     <consumo>101.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 1.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 1.0, 12.0, 4.0]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 0.21, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>56.0</baseImponibleRecibo>
     <ivaRecibo>8.4</ivaRecibo>
     <totalRecibo>64.4</totalRecibo>
@@ -433,6 +565,12 @@
     <lecturaActual>238.0</lecturaActual>
     <consumo>10.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 12.0, 2.0]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>34.0</baseImponibleRecibo>
     <ivaRecibo>4.2</ivaRecibo>
     <totalRecibo>38.2</totalRecibo>
@@ -452,6 +590,12 @@
     <lecturaActual>384.0</lecturaActual>
     <consumo>78.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 28.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 8.400001, 12.0, 3.24]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 1.764, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>47.640003</baseImponibleRecibo>
     <ivaRecibo>6.804</ivaRecibo>
     <totalRecibo>54.444004</totalRecibo>
@@ -471,6 +615,12 @@
     <lecturaActual>432.0</lecturaActual>
     <consumo>71.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 21.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 6.3, 12.0, 3.03]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 1.3230001, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>45.329998</baseImponibleRecibo>
     <ivaRecibo>6.3629994</ivaRecibo>
     <totalRecibo>51.692997</totalRecibo>
@@ -490,6 +640,12 @@
     <lecturaActual>149.0</lecturaActual>
     <consumo>113.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 13.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 13.0, 12.0, 5.2]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 2.73, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>69.2</baseImponibleRecibo>
     <ivaRecibo>10.92</ivaRecibo>
     <totalRecibo>80.119995</totalRecibo>
@@ -509,6 +665,12 @@
     <lecturaActual>426.0</lecturaActual>
     <consumo>13.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 12.0, 2.0]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>34.0</baseImponibleRecibo>
     <ivaRecibo>4.2</ivaRecibo>
     <totalRecibo>38.2</totalRecibo>
@@ -528,6 +690,12 @@
     <lecturaActual>730.0</lecturaActual>
     <consumo>9.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 12.0, 2.0]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>34.0</baseImponibleRecibo>
     <ivaRecibo>4.2</ivaRecibo>
     <totalRecibo>38.2</totalRecibo>
@@ -547,6 +715,12 @@
     <lecturaActual>153.0</lecturaActual>
     <consumo>116.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 16.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 16.0, 12.0, 5.5]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 3.36, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>72.5</baseImponibleRecibo>
     <ivaRecibo>11.549999</ivaRecibo>
     <totalRecibo>84.05</totalRecibo>
@@ -566,6 +740,12 @@
     <lecturaActual>690.0</lecturaActual>
     <consumo>172.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 72.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 72.0, 12.0, 11.1]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 15.12, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>134.1</baseImponibleRecibo>
     <ivaRecibo>23.31</ivaRecibo>
     <totalRecibo>157.41</totalRecibo>
@@ -585,6 +765,12 @@
     <lecturaActual>725.0</lecturaActual>
     <consumo>79.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 29.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 8.700001, 12.0, 3.27]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 1.8270001, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>47.97</baseImponibleRecibo>
     <ivaRecibo>6.867</ivaRecibo>
     <totalRecibo>54.837</totalRecibo>
@@ -604,6 +790,12 @@
     <lecturaActual>345.0</lecturaActual>
     <consumo>154.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 54.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 54.0, 12.0, 9.3]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 11.34, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>114.3</baseImponibleRecibo>
     <ivaRecibo>19.529999</ivaRecibo>
     <totalRecibo>133.83</totalRecibo>
@@ -623,6 +815,12 @@
     <lecturaActual>799.0</lecturaActual>
     <consumo>57.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 7.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 2.1000001, 12.0, 2.61]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 0.441, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>40.71</baseImponibleRecibo>
     <ivaRecibo>5.481</ivaRecibo>
     <totalRecibo>46.190998</totalRecibo>
@@ -642,6 +840,12 @@
     <lecturaActual>675.0</lecturaActual>
     <consumo>99.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 49.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 14.700001, 12.0, 3.87]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 3.0870001, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>54.57</baseImponibleRecibo>
     <ivaRecibo>8.127</ivaRecibo>
     <totalRecibo>62.697</totalRecibo>
@@ -661,6 +865,12 @@
     <lecturaActual>488.0</lecturaActual>
     <consumo>65.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 15.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 4.5, 12.0, 2.85]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 0.945, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>43.35</baseImponibleRecibo>
     <ivaRecibo>5.9849997</ivaRecibo>
     <totalRecibo>49.335</totalRecibo>
@@ -680,6 +890,12 @@
     <lecturaActual>1084.0</lecturaActual>
     <consumo>94.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 44.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 13.200001, 12.0, 3.72]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 2.772, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>52.920002</baseImponibleRecibo>
     <ivaRecibo>7.812</ivaRecibo>
     <totalRecibo>60.732002</totalRecibo>
@@ -699,6 +915,12 @@
     <lecturaActual>371.0</lecturaActual>
     <consumo>41.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 11.0, 0.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 2.2, 0.0, 12.0, 2.22]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.462, 0.0, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>36.420002</baseImponibleRecibo>
     <ivaRecibo>4.662</ivaRecibo>
     <totalRecibo>41.082</totalRecibo>
@@ -718,6 +940,12 @@
     <lecturaActual>1082.0</lecturaActual>
     <consumo>192.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 92.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 92.0, 12.0, 13.1]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 19.32, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>156.1</baseImponibleRecibo>
     <ivaRecibo>27.509998</ivaRecibo>
     <totalRecibo>183.61</totalRecibo>
@@ -737,6 +965,12 @@
     <lecturaActual>820.0</lecturaActual>
     <consumo>88.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 38.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 11.400001, 12.0, 3.54]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 2.394, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>50.940002</baseImponibleRecibo>
     <ivaRecibo>7.434</ivaRecibo>
     <totalRecibo>58.374</totalRecibo>
@@ -756,6 +990,12 @@
     <lecturaActual>335.0</lecturaActual>
     <consumo>157.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 57.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 57.0, 12.0, 9.6]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 11.97, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>117.6</baseImponibleRecibo>
     <ivaRecibo>20.16</ivaRecibo>
     <totalRecibo>137.76</totalRecibo>
@@ -775,6 +1015,12 @@
     <lecturaActual>721.0</lecturaActual>
     <consumo>126.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 26.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 26.0, 12.0, 6.5]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 5.46, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>83.5</baseImponibleRecibo>
     <ivaRecibo>13.65</ivaRecibo>
     <totalRecibo>97.15</totalRecibo>
@@ -794,6 +1040,12 @@
     <lecturaActual>596.0</lecturaActual>
     <consumo>184.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 84.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 84.0, 12.0, 12.3]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 17.64, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>147.3</baseImponibleRecibo>
     <ivaRecibo>25.83</ivaRecibo>
     <totalRecibo>173.13</totalRecibo>
@@ -813,6 +1065,12 @@
     <lecturaActual>388.0</lecturaActual>
     <consumo>44.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 14.0, 0.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 2.8, 0.0, 12.0, 2.28]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.588, 0.0, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>37.079998</baseImponibleRecibo>
     <ivaRecibo>4.7879996</ivaRecibo>
     <totalRecibo>41.867996</totalRecibo>
@@ -832,6 +1090,12 @@
     <lecturaActual>1009.0</lecturaActual>
     <consumo>27.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 12.0, 2.0]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>34.0</baseImponibleRecibo>
     <ivaRecibo>4.2</ivaRecibo>
     <totalRecibo>38.2</totalRecibo>
@@ -851,6 +1115,12 @@
     <lecturaActual>935.0</lecturaActual>
     <consumo>167.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 67.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 67.0, 12.0, 10.6]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 14.07, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>128.6</baseImponibleRecibo>
     <ivaRecibo>22.26</ivaRecibo>
     <totalRecibo>150.86</totalRecibo>
@@ -870,6 +1140,12 @@
     <lecturaActual>528.0</lecturaActual>
     <consumo>82.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 32.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 9.6, 12.0, 3.36]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 2.016, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>48.96</baseImponibleRecibo>
     <ivaRecibo>7.0559993</ivaRecibo>
     <totalRecibo>56.016</totalRecibo>
@@ -889,6 +1165,12 @@
     <lecturaActual>370.0</lecturaActual>
     <consumo>122.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 22.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 22.0, 12.0, 6.1]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 4.62, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>79.1</baseImponibleRecibo>
     <ivaRecibo>12.809999</ivaRecibo>
     <totalRecibo>91.909996</totalRecibo>
@@ -908,6 +1190,12 @@
     <lecturaActual>1052.0</lecturaActual>
     <consumo>92.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 42.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 12.6, 12.0, 3.66]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 2.6460001, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>52.26</baseImponibleRecibo>
     <ivaRecibo>7.6859994</ivaRecibo>
     <totalRecibo>59.946</totalRecibo>
@@ -927,6 +1215,12 @@
     <lecturaActual>917.0</lecturaActual>
     <consumo>28.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 12.0, 2.0]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>34.0</baseImponibleRecibo>
     <ivaRecibo>4.2</ivaRecibo>
     <totalRecibo>38.2</totalRecibo>
@@ -946,6 +1240,12 @@
     <lecturaActual>681.0</lecturaActual>
     <consumo>23.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 12.0, 2.0]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>34.0</baseImponibleRecibo>
     <ivaRecibo>4.2</ivaRecibo>
     <totalRecibo>38.2</totalRecibo>
@@ -965,6 +1265,12 @@
     <lecturaActual>1166.0</lecturaActual>
     <consumo>183.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 83.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 83.0, 12.0, 12.2]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 17.43, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>146.2</baseImponibleRecibo>
     <ivaRecibo>25.619999</ivaRecibo>
     <totalRecibo>171.81999</totalRecibo>
@@ -984,6 +1290,12 @@
     <lecturaActual>435.0</lecturaActual>
     <consumo>73.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 23.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 6.9, 12.0, 3.09]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 1.4490001, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>45.99</baseImponibleRecibo>
     <ivaRecibo>6.489</ivaRecibo>
     <totalRecibo>52.479</totalRecibo>
@@ -1003,6 +1315,12 @@
     <lecturaActual>454.0</lecturaActual>
     <consumo>180.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 80.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 80.0, 12.0, 11.9]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 16.8, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>142.9</baseImponibleRecibo>
     <ivaRecibo>24.99</ivaRecibo>
     <totalRecibo>167.89</totalRecibo>
@@ -1022,6 +1340,12 @@
     <lecturaActual>936.0</lecturaActual>
     <consumo>187.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 87.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 87.0, 12.0, 12.6]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 18.27, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>150.6</baseImponibleRecibo>
     <ivaRecibo>26.46</ivaRecibo>
     <totalRecibo>177.06</totalRecibo>
@@ -1041,6 +1365,12 @@
     <lecturaActual>961.0</lecturaActual>
     <consumo>18.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 12.0, 2.0]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>34.0</baseImponibleRecibo>
     <ivaRecibo>4.2</ivaRecibo>
     <totalRecibo>38.2</totalRecibo>
@@ -1060,6 +1390,12 @@
     <lecturaActual>654.0</lecturaActual>
     <consumo>109.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 9.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 9.0, 12.0, 4.8]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 1.89, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>64.8</baseImponibleRecibo>
     <ivaRecibo>10.08</ivaRecibo>
     <totalRecibo>74.880005</totalRecibo>
@@ -1079,6 +1415,12 @@
     <lecturaActual>212.0</lecturaActual>
     <consumo>12.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 12.0, 2.0]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>34.0</baseImponibleRecibo>
     <ivaRecibo>4.2</ivaRecibo>
     <totalRecibo>38.2</totalRecibo>
@@ -1098,6 +1440,12 @@
     <lecturaActual>598.0</lecturaActual>
     <consumo>174.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 74.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 74.0, 12.0, 11.3]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 15.54, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>136.3</baseImponibleRecibo>
     <ivaRecibo>23.73</ivaRecibo>
     <totalRecibo>160.03</totalRecibo>
@@ -1117,6 +1465,12 @@
     <lecturaActual>489.0</lecturaActual>
     <consumo>121.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 21.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 21.0, 12.0, 6.0]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 4.41, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>78.0</baseImponibleRecibo>
     <ivaRecibo>12.599999</ivaRecibo>
     <totalRecibo>90.6</totalRecibo>
@@ -1136,6 +1490,12 @@
     <lecturaActual>838.0</lecturaActual>
     <consumo>146.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 46.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 46.0, 12.0, 8.5]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 9.66, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>105.5</baseImponibleRecibo>
     <ivaRecibo>17.85</ivaRecibo>
     <totalRecibo>123.35</totalRecibo>
@@ -1155,6 +1515,12 @@
     <lecturaActual>772.0</lecturaActual>
     <consumo>139.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 39.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 39.0, 12.0, 7.8]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 8.19, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>97.8</baseImponibleRecibo>
     <ivaRecibo>16.38</ivaRecibo>
     <totalRecibo>114.18</totalRecibo>
@@ -1174,6 +1540,12 @@
     <lecturaActual>494.0</lecturaActual>
     <consumo>6.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 12.0, 2.0]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>34.0</baseImponibleRecibo>
     <ivaRecibo>4.2</ivaRecibo>
     <totalRecibo>38.2</totalRecibo>
@@ -1193,6 +1565,12 @@
     <lecturaActual>864.0</lecturaActual>
     <consumo>63.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 13.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 3.9, 12.0, 2.79]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 0.819, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>42.690002</baseImponibleRecibo>
     <ivaRecibo>5.8589997</ivaRecibo>
     <totalRecibo>48.549004</totalRecibo>
@@ -1212,6 +1590,12 @@
     <lecturaActual>520.0</lecturaActual>
     <consumo>123.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Alcantarillado, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 23.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 23.0, 12.0, 6.2]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 4.83, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>80.2</baseImponibleRecibo>
     <ivaRecibo>13.0199995</ivaRecibo>
     <totalRecibo>93.21999</totalRecibo>
@@ -1231,6 +1615,12 @@
     <lecturaActual>407.0</lecturaActual>
     <consumo>171.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 71.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 71.0]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 14.91]</ImporteIVA>
     <baseImponibleRecibo>110.0</baseImponibleRecibo>
     <ivaRecibo>23.099998</ivaRecibo>
     <totalRecibo>133.1</totalRecibo>
@@ -1250,6 +1640,12 @@
     <lecturaActual>161.0</lecturaActual>
     <consumo>93.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 43.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 12.900001]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 2.7090003]</ImporteIVA>
     <baseImponibleRecibo>36.9</baseImponibleRecibo>
     <ivaRecibo>7.749</ivaRecibo>
     <totalRecibo>44.649002</totalRecibo>
@@ -1269,6 +1665,12 @@
     <lecturaActual>673.0</lecturaActual>
     <consumo>40.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo]</Subconcepto>
+    <m3incluidos>[30.0, 10.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 2.0, 0.0]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.42, 0.0]</ImporteIVA>
     <baseImponibleRecibo>22.0</baseImponibleRecibo>
     <ivaRecibo>4.62</ivaRecibo>
     <totalRecibo>26.619999</totalRecibo>
@@ -1288,6 +1690,12 @@
     <lecturaActual>797.0</lecturaActual>
     <consumo>118.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 18.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 18.0]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 3.78]</ImporteIVA>
     <baseImponibleRecibo>57.0</baseImponibleRecibo>
     <ivaRecibo>11.969999</ivaRecibo>
     <totalRecibo>68.97</totalRecibo>
@@ -1307,6 +1715,12 @@
     <lecturaActual>543.0</lecturaActual>
     <consumo>125.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 25.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 25.0]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 5.25]</ImporteIVA>
     <baseImponibleRecibo>64.0</baseImponibleRecibo>
     <ivaRecibo>13.44</ivaRecibo>
     <totalRecibo>77.44</totalRecibo>
@@ -1326,6 +1740,12 @@
     <lecturaActual>306.0</lecturaActual>
     <consumo>56.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 6.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 1.8000001]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 0.37800002]</ImporteIVA>
     <baseImponibleRecibo>25.8</baseImponibleRecibo>
     <ivaRecibo>5.4179997</ivaRecibo>
     <totalRecibo>31.217999</totalRecibo>
@@ -1345,6 +1765,12 @@
     <lecturaActual>164.0</lecturaActual>
     <consumo>88.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 38.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 11.400001]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 2.394]</ImporteIVA>
     <baseImponibleRecibo>35.4</baseImponibleRecibo>
     <ivaRecibo>7.434</ivaRecibo>
     <totalRecibo>42.834</totalRecibo>
@@ -1364,6 +1790,12 @@
     <lecturaActual>666.0</lecturaActual>
     <consumo>31.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo]</Subconcepto>
+    <m3incluidos>[30.0, 1.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 0.2, 0.0]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.042000003, 0.0]</ImporteIVA>
     <baseImponibleRecibo>20.2</baseImponibleRecibo>
     <ivaRecibo>4.242</ivaRecibo>
     <totalRecibo>24.442001</totalRecibo>
@@ -1383,6 +1815,12 @@
     <lecturaActual>624.0</lecturaActual>
     <consumo>17.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Alcantarillado]</Concepto>
+    <Subconcepto>[Fijo, Fijo]</Subconcepto>
+    <m3incluidos>[30.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 12.0]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.0]</ImporteIVA>
     <baseImponibleRecibo>32.0</baseImponibleRecibo>
     <ivaRecibo>4.2</ivaRecibo>
     <totalRecibo>36.2</totalRecibo>
@@ -1402,6 +1840,12 @@
     <lecturaActual>1016.0</lecturaActual>
     <consumo>52.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Alcantarillado]</Concepto>
+    <Subconcepto>[Fijo]</Subconcepto>
+    <m3incluidos>[0.0]</m3incluidos>
+    <BaseImponible>[12.0]</BaseImponible>
+    <PorcentajeIVA>[0.0%]</PorcentajeIVA>
+    <ImporteIVA>[0.0]</ImporteIVA>
     <baseImponibleRecibo>12.0</baseImponibleRecibo>
     <ivaRecibo>0.0</ivaRecibo>
     <totalRecibo>12.0</totalRecibo>
@@ -1421,6 +1865,12 @@
     <lecturaActual>207.0</lecturaActual>
     <consumo>135.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Alcantarillado]</Concepto>
+    <Subconcepto>[Fijo]</Subconcepto>
+    <m3incluidos>[0.0]</m3incluidos>
+    <BaseImponible>[12.0]</BaseImponible>
+    <PorcentajeIVA>[0.0%]</PorcentajeIVA>
+    <ImporteIVA>[0.0]</ImporteIVA>
     <baseImponibleRecibo>12.0</baseImponibleRecibo>
     <ivaRecibo>0.0</ivaRecibo>
     <totalRecibo>12.0</totalRecibo>
@@ -1440,6 +1890,12 @@
     <lecturaActual>315.0</lecturaActual>
     <consumo>127.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Alcantarillado]</Concepto>
+    <Subconcepto>[Fijo]</Subconcepto>
+    <m3incluidos>[0.0]</m3incluidos>
+    <BaseImponible>[12.0]</BaseImponible>
+    <PorcentajeIVA>[0.0%]</PorcentajeIVA>
+    <ImporteIVA>[0.0]</ImporteIVA>
     <baseImponibleRecibo>12.0</baseImponibleRecibo>
     <ivaRecibo>0.0</ivaRecibo>
     <totalRecibo>12.0</totalRecibo>
@@ -1459,6 +1915,12 @@
     <lecturaActual>805.0</lecturaActual>
     <consumo>95.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 45.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 13.500001, 3.75]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 2.8350003, 0.0]</ImporteIVA>
     <baseImponibleRecibo>41.25</baseImponibleRecibo>
     <ivaRecibo>7.8749995</ivaRecibo>
     <totalRecibo>49.125</totalRecibo>
@@ -1478,6 +1940,12 @@
     <lecturaActual>704.0</lecturaActual>
     <consumo>195.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 95.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 95.0, 13.4]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 19.95, 0.0]</ImporteIVA>
     <baseImponibleRecibo>147.4</baseImponibleRecibo>
     <ivaRecibo>28.14</ivaRecibo>
     <totalRecibo>175.54</totalRecibo>
@@ -1497,6 +1965,12 @@
     <lecturaActual>874.0</lecturaActual>
     <consumo>117.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 17.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 17.0, 5.6]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 3.57, 0.0]</ImporteIVA>
     <baseImponibleRecibo>61.6</baseImponibleRecibo>
     <ivaRecibo>11.759999</ivaRecibo>
     <totalRecibo>73.36</totalRecibo>
@@ -1516,6 +1990,12 @@
     <lecturaActual>37.0</lecturaActual>
     <consumo>36.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 6.0, 0.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 1.2, 0.0, 2.12]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.252, 0.0, 0.0]</ImporteIVA>
     <baseImponibleRecibo>23.32</baseImponibleRecibo>
     <ivaRecibo>4.452</ivaRecibo>
     <totalRecibo>27.772</totalRecibo>
@@ -1535,6 +2015,12 @@
     <lecturaActual>65.0</lecturaActual>
     <consumo>54.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 4.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 1.2, 2.52]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 0.252, 0.0]</ImporteIVA>
     <baseImponibleRecibo>27.720001</baseImponibleRecibo>
     <ivaRecibo>5.292</ivaRecibo>
     <totalRecibo>33.012</totalRecibo>
@@ -1554,6 +2040,12 @@
     <lecturaActual>1020.0</lecturaActual>
     <consumo>76.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 26.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 7.8, 3.18]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 1.638, 0.0]</ImporteIVA>
     <baseImponibleRecibo>34.98</baseImponibleRecibo>
     <ivaRecibo>6.6779995</ivaRecibo>
     <totalRecibo>41.657997</totalRecibo>
@@ -1573,6 +2065,12 @@
     <lecturaActual>354.0</lecturaActual>
     <consumo>67.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 17.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 5.1000004, 2.91]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 1.0710001, 0.0]</ImporteIVA>
     <baseImponibleRecibo>32.010002</baseImponibleRecibo>
     <ivaRecibo>6.111</ivaRecibo>
     <totalRecibo>38.121002</totalRecibo>
@@ -1592,6 +2090,12 @@
     <lecturaActual>838.0</lecturaActual>
     <consumo>110.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Agua, Agua, Agua, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Primer tramo, Segundo tramo, Tercer tramo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 20.0, 50.0, 10.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 4.0, 15.000001, 10.0, 4.9]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 21.0%, 21.0%, 21.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 4.2, 5.04, 2.1, 0.0]</ImporteIVA>
     <baseImponibleRecibo>53.9</baseImponibleRecibo>
     <ivaRecibo>10.29</ivaRecibo>
     <totalRecibo>64.19</totalRecibo>
@@ -1611,6 +2115,12 @@
     <lecturaActual>191.0</lecturaActual>
     <consumo>17.0</consumo>
     <TipoCalculo>[Hogar]</TipoCalculo>
+    <Concepto>[Agua, Desagüe]</Concepto>
+    <Subconcepto>[Fijo, Desagüe]</Subconcepto>
+    <m3incluidos>[30.0, 0.0]</m3incluidos>
+    <BaseImponible>[20.0, 2.0]</BaseImponible>
+    <PorcentajeIVA>[21.0%, 0.0%]</PorcentajeIVA>
+    <ImporteIVA>[4.2, 0.0]</ImporteIVA>
     <baseImponibleRecibo>22.0</baseImponibleRecibo>
     <ivaRecibo>4.2</ivaRecibo>
     <totalRecibo>26.2</totalRecibo>
