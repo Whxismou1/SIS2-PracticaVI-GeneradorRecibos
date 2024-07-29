@@ -17,6 +17,6 @@ El programa:
 
 1. Clona este repositorio:
    ```sh
-   git clone https://github.com/Whxismou1/SIS2-PracticaV-NIFAndCCCSystem.git
+   git clone https://github.com/Whxismou1/SIS2-PracticaVI-GeneradorRecibos
    ```
 2. Importa el proyecto en tu IDE de preferencia (por ejemplo, IntelliJ IDEA o Eclipse).
